@@ -1,0 +1,21 @@
+package com.essentialab.listview;
+
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.app.ListActivity;
+
+public class HomeActivity extends ListActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+        
+        String[] planetas = {
+        		"Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno", "Pluton"
+        		};
+        
+        getListView().setAdapter(new ArrayAdapter<String>(this, R.id.list,planetas));
+    }
+
+}

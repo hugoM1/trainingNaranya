@@ -1,0 +1,91 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="53.33dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/photoB"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back_normal"
+            android:src="@drawable/ic_action_camera" 
+            android:onClick="onPhotoClick"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:hint="Mensaje"
+            android:background="@drawable/phone_input_s"
+            android:layout_weight="1" 
+            android:singleLine="true"/>
+        
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_back_normal"
+            android:textColor="#0a597f"
+            android:onClick="onSendClick"
+            android:text="Enviar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textPresence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="Online/Offline"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#aaa"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:padding="5dp"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/typingText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:dividerHeight="0dp"
+        android:divider="#00000000"
+        android:clickable="false"
+        >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/typingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Typing.."
+        android:visibility="gone"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:layout_margin="4dp" 
+        android:textSize="12sp" 
+        android:textColor="#aaa"/>
+
+</RelativeLayout>
+</FrameLayout>
