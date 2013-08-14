@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+/Users/hugomecalcoeliosa/Documents/EssentiaLab/Training/Code Naranya/.metadata/.plugins/org.eclipse.jdt.core
+2520585352.index
+665595125.index
+1117077317.index
+4261266059.index
+925858928.index
+1740967614.index

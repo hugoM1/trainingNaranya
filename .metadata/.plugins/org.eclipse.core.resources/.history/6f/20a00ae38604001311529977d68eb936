@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView 
+	    android:id="@+id/TextView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/first_name"
+		android:width="100dp" />
+	<EditText 
+	    android:id="@+id/EditText1" 
+	    android:layout_width="220dp"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/TextView01" />
+	<EditText 
+	    android:id="@+id/EditText2" 
+	    android:layout_width="220dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/EditText01"
+		android:layout_alignLeft="@+id/EditText01" />
+	<TextView 
+	    android:id="@+id/TextView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Second Name:"
+		android:width="100dp" 
+		android:layout_below="@+id/EditText01"
+		android:layout_toLeftOf="@+id/EditText02" />
+	<Button 
+	    android:text="Submit" 
+	    android:id="@+id/Button1"
+		android:layout_width="100dp" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/EditText02"
+		android:layout_alignLeft="@id/EditText02" />
+	<Button 
+	    android:text="Reset" 
+	    android:id="@+id/Button2"
+		android:layout_width="100dp" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/EditText02"
+		android:layout_alignRight="@id/EditText02" />
+</RelativeLayout>
